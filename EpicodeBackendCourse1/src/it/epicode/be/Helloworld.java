@@ -11,11 +11,11 @@ public class Helloworld {
 //			System.out.println("This is my first Epicode Java Project!");
 			//moltiply();
 			//string();
-			//arrayEsercizio();
+			arrayEsercizio();
 			//threestring();
 			//perimetroRettangolo();
 			//pariDispari();
-			areaTringolo();
+			//areaTringolo();
 			}
 	
 	public static void moltiply() {
@@ -44,7 +44,11 @@ public class Helloworld {
 		String[] arrayName = {"giovanni","paolo","andrea","chiara","elena",""};
 		System.out.println("inserisci un nome:");
 		String name1= arr.nextLine();
-		arrayName[5] = name1;
+		for(int i = arrayName.length-2; i >= 2; i--) {
+	        arrayName[i+1] = arrayName[i];
+	    };
+	    arrayName[2] = name1;
+	    
 		System.out.println(Arrays.toString(arrayName));
 		}
 	
