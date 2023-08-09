@@ -50,6 +50,7 @@ public class Helloworld {
 	    arrayName[2] = name1;
 	    
 		System.out.println(Arrays.toString(arrayName));
+		arr.close();
 		}
 	
 	public static void threestring() {
@@ -62,6 +63,8 @@ public class Helloworld {
 		String threeSentence = settens.nextLine();
 		System.out.println(oneSentence + " " + twoSentence + " " + threeSentence);
 		System.out.println(threeSentence + " " + twoSentence + " " + oneSentence);
+		
+		settens.close();
 		}
 	
 	public static void perimetroRettangolo() {
@@ -72,6 +75,8 @@ public class Helloworld {
 		double Lato2 = rettangolo.nextDouble();
 		double perimetro = Lato1 + Lato2 * 2;
 		System.out.println(perimetro);
+		
+		rettangolo.close();
 	}
 	
 	public static void pariDispari() {
@@ -83,6 +88,8 @@ public class Helloworld {
 		}else {
 			System.out.println(1);
 		}
+		
+		num.close();
 	}
 	
 	public static void areaTringolo() {
@@ -95,6 +102,8 @@ public class Helloworld {
 		double Lato3 = tri.nextDouble();
 		double Area = Math.sqrt(Lato1 + Lato2 + Lato3);
 		System.out.println(Area);
+		
+		tri.close();
 	}
 	
 	
